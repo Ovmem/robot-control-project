@@ -55,6 +55,20 @@ robot_control_project
         kinematics.cpython-310.pyc
 ```
 
+## Results
+
+### Circular Trajectory Tracking
+
+![Trajectory](results/trajectory_tracking.png)
+
+### Tracking Error
+
+![Error](results/tracking_error.png)
+
+Average Error ≈ 0.024 m
+
+RMSE ≈ 0.024 m
+
 ## Future Work
 
 * Differential Inverse Kinematics
