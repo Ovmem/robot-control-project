@@ -1,0 +1,44 @@
+<mujoco model="arm2d">
+
+    <option gravity="0 0 0"/>
+
+    <worldbody>
+
+        <body name="link1" pos="0 0 0">
+
+            <joint
+                name="joint1"
+                type="hinge"
+                axis="0 0 1"/>
+
+            <geom
+                type="capsule"
+                fromto="0 0 0 0.5 0 0"
+                size="0.03"/>
+
+            <body name="link2" pos="0.5 0 0">
+
+                <joint
+                    name="joint2"
+                    type="hinge"
+                    axis="0 0 1"/>
+
+                <geom
+                    type="capsule"
+                    fromto="0 0 0 0.5 0 0"
+                    size="0.03"/>
+
+            </body>
+
+        </body>
+
+    </worldbody>
+
+    <actuator>
+
+        <motor joint="joint1"/>
+        <motor joint="joint2"/>
+
+    </actuator>
+
+</mujoco>
