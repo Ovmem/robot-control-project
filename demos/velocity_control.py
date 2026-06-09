@@ -3,8 +3,8 @@ import mujoco.viewer
 
 import numpy as np
 
-from kinematics import fk
-from kinematics import jacobian
+from core.kinematics import fk
+from core.kinematics import jacobian
 
 model = mujoco.MjModel.from_xml_path(
     "models/arm2d.xml"
@@ -66,7 +66,7 @@ with mujoco.viewer.launch_passive(
             print("ee =", ee)
 
             print("q_target =", q_target)
-            
+
             print(
             "det(J) =",
             np.linalg.det(J)

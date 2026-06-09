@@ -2,8 +2,8 @@ import mujoco
 import mujoco.viewer
 import numpy as np
 
-from kinematics import fk
-from kinematics import ik
+from core.kinematics import fk
+from core.kinematics import ik
 
 
 # 加载模型

@@ -1,6 +1,6 @@
 import numpy as np
 
-from kinematics import jacobian
+from core.kinematics import jacobian
 
 q = np.array([
     0.0,

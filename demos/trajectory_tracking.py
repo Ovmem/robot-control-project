@@ -3,8 +3,8 @@ import mujoco.viewer
 import numpy as np
 import matplotlib.pyplot as plt
 
-from kinematics import fk
-from kinematics import ik
+from core.kinematics import fk
+from core.kinematics import ik
 
 
 # --------------------
