@@ -122,3 +122,30 @@ def jacobian_3dof(q):
     ])
 
     return J
+
+def fk_all_3dof(q):
+
+    l1 = 0.5
+    l2 = 0.3
+    l3 = 0.2
+
+    q1,q2,q3 = q
+
+    p0 = np.array([0,0])
+
+    p1 = np.array([
+        l1*np.cos(q1),
+        l1*np.sin(q1)
+    ])
+
+    p2 = p1 + np.array([
+        l2*np.cos(q1+q2),
+        l2*np.sin(q1+q2)
+    ])
+
+    p3 = p2 + np.array([
+        l3*np.cos(q1+q2+q3),
+        l3*np.sin(q1+q2+q3)
+    ])
+
+    return p0,p1,p2,p3

@@ -75,3 +75,9 @@ RMSE ≈ 0.024 m
 * Motion Retargeting
 * Whole-Body Control
 * Humanoid Robot Control
+
+## Retargeting Demo
+
+A synthetic human hand trajectory is mapped to a 3-DOF robotic manipulator through Jacobian-based task-space control.
+
+![Retargeting](results/retargeting_demo.png)
